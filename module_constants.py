@@ -1,6 +1,6 @@
 """КОНСТАНТЫ."""
 
-API_KEY = '9a7ac57d76bb2c60a9eb8d8e0c5aa0d2'
+API_KEY = ''
 BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 WEATHER_ICONS = {
     # day icons
