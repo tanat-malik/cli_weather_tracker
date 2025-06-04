@@ -26,7 +26,7 @@ def render_weather_on_console(data):
     """Отрисовка данных на консоли."""
     city_name = data['name']
     country_name = data['sys']['country']
-    current_temp = data['main']['temp']
+    current_temp = int(data['main']['temp'])
     temp_feels_like = data['main']['feels_like']
     weather_desc = data['weather'][0]['description']
     weather_icon = WEATHER_ICONS[data['weather'][0]['icon']]

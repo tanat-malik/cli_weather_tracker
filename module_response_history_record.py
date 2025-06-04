@@ -8,7 +8,7 @@ def history_record(json_data):
     city_name = json_data['name']
     country_name = json_data['sys']['country']
     city_coords = json_data['coord']
-    temp = json_data['main']['temp']
+    temp = int(json_data['main']['temp'])
     weather_desc = json_data['weather'][0]['description']
     response_status = json_data['cod']
     current_time = datetime.datetime.now().strftime('%d_%m_%Y_%H_%M_%S')
