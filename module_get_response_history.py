@@ -1,9 +1,9 @@
-"""Чтение истории запросов"""
+"""Чтение истории запросов."""
 import json
 
 
 def get_response_history():
-    # Попытка прочесть содержимое истории запросов
+    """Чтение файла история запросов."""
     try:
         with open('response_history_record.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
